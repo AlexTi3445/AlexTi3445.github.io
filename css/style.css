@@ -1,0 +1,137 @@
+body {
+    background: #E5E5E5;
+}
+
+.page {
+    max-width: 1800px;
+    font-family: 'montserrat', serif;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.logo-top {
+    width: 160px;
+    height: 87px;
+}
+
+.logo-top__img,
+.event-pic__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+.nav {
+    margin-top: 60px;
+    min-height: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu__link {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 8px;
+    /* border: 1px solid rgba(209, 169, 84, 0.9);
+    border: transparent; */
+}
+
+.color-gold {
+    color: #D1A954;
+}
+
+.menu__link:hover,
+.burger-size:hover {
+    border: 1px solid rgba(209, 169, 84, 0.9);
+}
+
+.burger-size {
+    padding: 25px 10px;
+    cursor: pointer;
+}
+
+.line {
+    width: 40px;
+    height: 1px;
+    background: #000000;
+    position: relative;
+}
+
+.line::before,
+.line::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+.line::after {
+    top: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.events {
+    height: 770px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.event-pic {
+    width: 580px;
+    height: 650px;
+}
+
+.event-item {
+    position: relative;
+}
+
+.event-item-block {
+    width: 580px;
+    height: 166px;
+    position: absolute;
+    top: 75%;
+    left: 0;
+    background: url(../img/back-ev.png) no-repeat center / 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px; */
+}
+
+.event-item-block__title {
+    font-size: 30px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.event-item-block__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
